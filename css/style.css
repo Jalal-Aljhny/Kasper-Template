@@ -323,6 +323,10 @@ header .container ul li a {
   header .container ul li a.active {
     border-bottom: 2px solid var(--main-color);
   }
+  header.head-animation .container ul li a:hover,
+  header.head-animation .container ul li a.active {
+    transform: scaleX(1.2) translateX(8%);
+  }
 }
 header .container ul li a:hover,
 header .container ul li a.active {
@@ -333,7 +337,6 @@ header.head-animation .container ul li a:hover,
 header.head-animation .container ul li a.active {
   border-color: white;
   color: white;
-  transform: scaleX(1.2) translateX(8%);
 }
 
 header .container a img {
