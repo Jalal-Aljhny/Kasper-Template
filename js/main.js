@@ -55,7 +55,7 @@ indicators.forEach((el) => {
   });
 });
 cheker();
-window.setInterval(autoSlider, 5000);
+// window.setInterval(autoSlider, 5000);
 function activeIndicator() {
   indicators.forEach((el) => {
     el.classList.remove("active");
@@ -77,10 +77,10 @@ function cheker() {
   landing.style.backgroundImage = `url(${images[currentSlide - 1]})`;
   activeIndicator();
 }
-function autoSlider() {
-  currentSlide += 1;
-  cheker();
-}
+// function autoSlider() {
+//   currentSlide += 1;
+//   cheker();
+// }
 function changeOpacity() {
   landing.style.animationName = "fade";
   setTimeout(() => {
