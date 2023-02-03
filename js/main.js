@@ -6,8 +6,6 @@ logo.onclick = function () {
 
 //preload animation
 let loader = document.getElementById("loader");
-// let time = performance.timing;
-// let pageloadtime = time.loadEventStart - time.navigationStart;
 let timeStart = new Date();
 window.addEventListener("load", () => {
   window.setTimeout(() => {
@@ -57,7 +55,7 @@ indicators.forEach((el) => {
   });
 });
 cheker();
-// window.setInterval(autoSlider, 5000);
+window.setInterval(autoSlider, 5000);
 function activeIndicator() {
   indicators.forEach((el) => {
     el.classList.remove("active");
@@ -135,20 +133,20 @@ searchField.addEventListener("input", function () {
   }
 });
 
-// // scroll to top button
-// let scrollBtn = document.querySelector("i.scroll");
-// window.addEventListener("scroll", () => {
-//   if (window.scrollY >= 500) {
-//     scrollBtn.style.display = "block";
-//   } else {
-//     scrollBtn.style.display = "none";
-//   }
-// });
-// scrollBtn.onclick = function () {
-//   window.scrollTo(0, 0);
-//   window.location.hash = "";
-//   activeHome();
-// };
+// scroll to top button
+let scrollBtn = document.querySelector("i.scroll");
+window.addEventListener("scroll", () => {
+  if (window.scrollY >= 500) {
+    scrollBtn.style.display = "block";
+  } else {
+    scrollBtn.style.display = "none";
+  }
+});
+scrollBtn.onclick = function () {
+  window.scrollTo(0, 0);
+  window.location.hash = "";
+  activeHome();
+};
 
 //filter our work
 let workBtns = document.querySelectorAll(".portfolio .container ul li");
