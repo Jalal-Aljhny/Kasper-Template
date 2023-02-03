@@ -333,7 +333,7 @@ header.head-animation .container ul li a:hover,
 header.head-animation .container ul li a.active {
   border-color: white;
   color: white;
-  transform: scaleX(1.2);
+  transform: scaleX(1.2) translateX(8%);
 }
 
 header .container a img {
