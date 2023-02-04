@@ -8,9 +8,7 @@ logo.onclick = function () {
 let loader = document.getElementById("loader");
 let timeStart = new Date();
 window.addEventListener("load", () => {
-  window.setTimeout(() => {
-    loader.style.display = "none";
-  }, 1000);
+  loader.style.display = "none";
 });
 
 //toglle menu
