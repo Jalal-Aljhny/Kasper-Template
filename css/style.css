@@ -339,8 +339,10 @@ header.head-animation .container ul li a.active {
   color: white;
 }
 
-header .container a img {
+header .container img {
   height: 40px;
+  width: 118px;
+  cursor: pointer;
 }
 header .container input[type="search"] {
   display: none;
@@ -405,9 +407,6 @@ header .container form p#no-result {
 /* End Header */
 /* Start Landing */
 .landing {
-  /* background-image: url("../images/owl1.jpg"); */
-  /* background-image: url("../images/owl2.jpg"); */
-  /* background-image: url("../images/owl3.jpg"); */
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -619,7 +618,7 @@ span.next {
 /* End Services  */
 /* Start Design  */
 .design {
-  background-image: url(../images/programming.jpg);
+  background-image: url(../images/programming.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -809,12 +808,24 @@ span.next {
   bottom: -100%;
   width: 100%;
 }
-.portfolio .images-container .image-box .caption h4 {
+.portfolio .images-container .image-box .caption p {
   margin-bottom: 10px;
-  font-weight: normal;
 }
 .portfolio .images-container .image-box .caption h3 {
   color: var(--main-color);
+}
+@media (max-width: 767px) {
+  .portfolio .images-container .image-box .caption {
+    padding: 10px 15px;
+  }
+  .portfolio .images-container .image-box .caption p {
+    margin-bottom: 5px;
+    margin-left: 10px;
+    font-size: 12px;
+  }
+  .portfolio .images-container .image-box .caption h3 {
+    font-size: 14px;
+  }
 }
 .portfolio p.more {
   padding: 10px 20px;
@@ -905,7 +916,7 @@ span.next {
 /* End About */
 /* Start Stats */
 .stats {
-  background-image: url(../images/computer.jpg);
+  background-image: url(../images/computer.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1084,7 +1095,7 @@ span.next {
 .quote {
   padding-top: 100px;
   padding-bottom: 100px;
-  background-image: url(../images/quote.jpg);
+  background-image: url(../images/quote.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1235,7 +1246,7 @@ span.next {
 /* End Pricing */
 /* Start Subscribe */
 .subscribe {
-  background-image: url(../images/subsc.jpg);
+  background-image: url(../images/subsc.webp);
   background-size: cover;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -1410,7 +1421,7 @@ span.next {
 /* End Contact */
 /* Start Footer  */
 footer {
-  background-image: url(../images/footer.jpg);
+  background-image: url(../images/footer.webp);
   background-size: cover;
   background-position: center;
   position: relative;

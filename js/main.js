@@ -1,5 +1,5 @@
 //logo
-let logo = document.querySelector("header .container a img");
+let logo = document.querySelector("header .container  img");
 logo.onclick = function () {
   window.location.reload();
 };
@@ -34,9 +34,9 @@ let indicators = document.querySelectorAll(".indicators span");
 let landing = document.getElementsByClassName("landing")[0];
 
 let images = [];
-images[0] = "./images/owl1.jpg";
-images[1] = "./images/owl2.jpg";
-images[2] = "./images/owl3.jpg";
+images[0] = "./images/owl1.webp";
+images[1] = "./images/owl2.webp";
+images[2] = "./images/owl3.webp";
 let currentSlide = Math.ceil(Math.random() * 3); //1 2 3
 prevBtn.onclick = function () {
   currentSlide--;
