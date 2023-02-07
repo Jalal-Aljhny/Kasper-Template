@@ -906,7 +906,11 @@ span.next {
   text-align: center;
 }
 .about img {
+  width: 740px;
   max-width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 @media (max-width: 767px) {
   .about {
@@ -1443,6 +1447,7 @@ footer .container {
 }
 footer img {
   width: 100px;
+  height: 33px;
   margin-bottom: 30px;
 }
 footer .container p:first-of-type {

@@ -53,7 +53,6 @@ indicators.forEach((el) => {
   });
 });
 cheker();
-// window.setInterval(autoSlider, 5000);
 function activeIndicator() {
   indicators.forEach((el) => {
     el.classList.remove("active");
@@ -75,10 +74,7 @@ function cheker() {
   landing.style.backgroundImage = `url(${images[currentSlide - 1]})`;
   activeIndicator();
 }
-// function autoSlider() {
-//   currentSlide += 1;
-//   cheker();
-// }
+
 function changeOpacity() {
   landing.style.animationName = "fade";
   setTimeout(() => {
@@ -341,7 +337,7 @@ window.addEventListener("scroll", () => {
 });
 window.addEventListener("load", () => {
   let timeEnd = new Date();
-  let loadTime = timeEnd - timeStart + 1000; //time of page load + time of preload animation
+  let loadTime = timeEnd - timeStart + 300; //time of page load + time of preload animation
   window.setTimeout(() => {
     landingText.classList.add("rtl");
   }, loadTime);
